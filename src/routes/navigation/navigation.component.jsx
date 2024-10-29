@@ -1,9 +1,9 @@
-import { Fragment } from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Fragment } from 'react';
+import { Outlet, Link } from 'react-router-dom';
 
-import { ReactComponent as RoyalLogo } from "../../assets/royal.svg";
+import { ReactComponent as RoyalLogo } from '../../assets/royal.svg';
 
-import "./navigation.styles.scss";
+import './navigation.styles.scss';
 
 const Navigation = () => {
   return (
