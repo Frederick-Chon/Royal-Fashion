@@ -1,13 +1,11 @@
-import { AnyAction } from 'redux-saga';
-
-import { USER_ACTION_TYPES } from './user.types';
+import { AnyAction } from 'redux';
 
 import {
-  signInSuccess,
-  signOutSuccess,
   signInFailed,
   signUpFailed,
   signOutFailed,
+  signOutSuccess,
+  signInSuccess,
 } from './user.action';
 
 import { UserData } from '../../utils/firebase/firebase.utils';
@@ -18,7 +16,7 @@ export type UserState = {
   readonly error: Error | null;
 };
 
-const INITIAL_STATE: UserState = {
+export const INITIAL_STATE: UserState = {
   currentUser: null,
   isLoading: false,
   error: null,
@@ -26,7 +24,7 @@ const INITIAL_STATE: UserState = {
 
 export const userReducer = (state = INITIAL_STATE, action: AnyAction) => {
   if (signInSuccess.match(action)) {
-    return { ...state, getCurrentUser: action.payload };
+    return { ...state, currentUser: action.payload };
   }
 
   if (signOutSuccess.match(action)) {
