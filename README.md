@@ -1,4 +1,9 @@
 # Royal Fashion
+![alt text](https://github.com/Frederick-Chon/Royal-Fashion/blob/master/public/screenshots/1.PNG?raw=true)
+
+## Live Demo
+Live on Netlify: [Explore the Demo](https://precious-otter-3558a6.netlify.app/)
+
 
 ## Overview
 Royal Fashion is a responsive e-commerce web application built with React and TypeScript. It features a clean design and functionality powered by Redux Toolkit, Stripe integration, and Firebase, offering users a smooth shopping experience across devices.
@@ -8,6 +13,7 @@ Royal Fashion is a responsive e-commerce web application built with React and Ty
 - **Product Management**: View a catalog of fashion products with sorting and filtering options.
 - **Shopping Cart**: Add, remove, and manage items in the cart with real-time updates.
 - **Payment Processing**: Secure payment integration using Stripe.
+  - Test Stripe's card payment functionality using the card number `4242 4242 4242 4242`, with any valid expiration date (MM/YY) and CVV.
 - **State Management**: Powered by Redux Toolkit with persistence using Redux Persist.
 - **Styling**: Customizable styles implemented with Styled Components.
 
@@ -78,12 +84,13 @@ Royal-Fashion/
 └── README.md          # Project documentation
 ```
 
+## Additional Screenshots
+![alt text](https://github.com/Frederick-Chon/Royal-Fashion/blob/master/public/screenshots/2.PNG?raw=true)
+![alt text](https://github.com/Frederick-Chon/Royal-Fashion/blob/master/public/screenshots/3.PNG?raw=true)
+![alt text](https://github.com/Frederick-Chon/Royal-Fashion/blob/master/public/screenshots/4.PNG?raw=true)
 
 ## Acknowledgments
 - [Create React App](https://github.com/facebook/create-react-app) for project setup.
 - [Redux Toolkit](https://redux-toolkit.js.org/) for state management.
 - [Stripe](https://stripe.com/docs) for payment integration.
 - [Firebase](https://firebase.google.com/docs) for backend services.
-
----
-Feel free to reach out for questions or feedback!
